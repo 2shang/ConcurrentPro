@@ -27,6 +27,7 @@ public class DeadLockTest {
                 }
             }
         },"T1").start();
+
         new Thread(new Runnable() {
             public void run() {
                 synchronized (ResourceB){
